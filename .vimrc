@@ -21,6 +21,7 @@ set noswapfile
 set history=1000
 
 " highlight
+syntax on
 set hlsearch
 set showmatch
 set cursorline
@@ -81,14 +82,13 @@ filetype plugin indent on
 
 
 " Set colorscheme
-syntax on
-"colorscheme jellybeans
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
+"colorscheme jellybeans
 
 
 " Powerline settings
