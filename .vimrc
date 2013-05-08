@@ -66,12 +66,13 @@ Bundle 'scrooloose/nerdtree'
 
 Bundle 'mattn/zencoding-vim'
 Bundle 'Townk/vim-autoclose'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'davidhalter/jedi-vim'
+"Bundle 'ervandew/supertab'
 
 Bundle 'a.vim'
 Bundle 'FencView.vim'
@@ -107,13 +108,19 @@ let g:ctrlp_follow_symlinks=1
 nmap <F2> :NERDTreeToggle<CR>
 
 " jedi settings
-let g:jedi#autocompletion_command="<tab>"
+"let g:jedi#autocompletion_command="<tab>"
+let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first=0
+
+
+" YouCompleteMe settings
+let g:ycm_key_detailed_diagnostics = ''
+
 
 " Syntastic settings
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
-let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_checkers=['pyflakes']
 
 nmap <F9> :SyntasticToggleMode<CR>
 nmap <F10> :Errors<CR>
