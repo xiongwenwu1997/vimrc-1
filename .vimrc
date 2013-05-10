@@ -114,7 +114,7 @@ let g:jedi#popup_select_first=0
 
 
 " YouCompleteMe settings
-let g:ycm_key_detailed_diagnostics = ''
+let g:ycm_key_detailed_diagnostics = '<leader>a'
 
 
 " Syntastic settings
