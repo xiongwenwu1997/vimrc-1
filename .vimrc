@@ -20,6 +20,10 @@ set nobackup
 set noswapfile
 set history=1000
 
+" map esc key
+inoremap `` <Esc>
+
+
 " highlight
 syntax on
 set hlsearch
@@ -124,3 +128,4 @@ let g:syntastic_python_checkers=['pyflakes']
 
 nmap <F9> :SyntasticToggleMode<CR>
 nmap <F10> :Errors<CR>
+
