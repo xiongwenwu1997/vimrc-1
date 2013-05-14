@@ -90,8 +90,8 @@ filetype plugin indent on
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
+let g:solarized_contrast="normal"
+let g:solarized_visibility="normal"
 colorscheme solarized
 "colorscheme jellybeans
 
@@ -128,4 +128,9 @@ let g:syntastic_python_checkers=['pyflakes']
 
 nmap <F9> :SyntasticToggleMode<CR>
 nmap <F10> :Errors<CR>
+
+
+" vim-task settings
+noremap <silent> <buffer> <F6> <ESC>:call Toggle_task_status()<CR>i
+noremap <silent> <buffer> <F6> :call Toggle_task_status()<CR>
 
