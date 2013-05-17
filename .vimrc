@@ -31,6 +31,8 @@ set showmatch
 set cursorline
 set colorcolumn=80
 
+nnoremap <F4> :set hlsearch!<CR>
+
 nmap <leader>l :set list!<CR>
 set list
 set listchars=tab:»\ ,trail:·
