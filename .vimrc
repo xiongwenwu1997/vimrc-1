@@ -82,6 +82,8 @@ Bundle 'davidhalter/jedi-vim'
 
 Bundle 'a.vim'
 Bundle 'FencView.vim'
+Bundle 'taglist.vim'
+Bundle 'vim-scripts/AutoTag'
 
 filetype on
 filetype plugin on
@@ -97,6 +99,13 @@ let g:solarized_visibility="normal"
 colorscheme solarized
 "colorscheme jellybeans
 
+
+" Taglist settings
+noremap <silent> <F7> :TlistToggle<cr>
+let g:Tlist_Show_One_File=1
+let g:Tlist_Use_Right_Window=1
+let g:Tlist_Exit_OnlyWindow=1
+let g:Tlist_WinWidth=40
 
 " Powerline settings
 set t_Co=256
@@ -118,10 +127,8 @@ nmap <F2> :NERDTreeToggle<CR>
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first=0
 
-
 " YouCompleteMe settings
 let g:ycm_key_detailed_diagnostics = '<leader>a'
-
 
 " Syntastic settings
 let g:syntastic_check_on_open=1
@@ -130,9 +137,4 @@ let g:syntastic_python_checkers=['pyflakes']
 
 nmap <F9> :SyntasticToggleMode<CR>
 nmap <F10> :Errors<CR>
-
-
-" vim-task settings
-noremap <silent> <buffer> <F6> <ESC>:call Toggle_task_status()<CR>i
-noremap <silent> <buffer> <F6> :call Toggle_task_status()<CR>
 
