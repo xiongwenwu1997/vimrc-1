@@ -69,6 +69,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
+Bundle 'taglist.vim'
+Bundle 'vim-scripts/AutoTag'
 
 Bundle 'mattn/zencoding-vim'
 Bundle 'Townk/vim-autoclose'
@@ -82,8 +84,7 @@ Bundle 'davidhalter/jedi-vim'
 
 Bundle 'a.vim'
 Bundle 'FencView.vim'
-Bundle 'taglist.vim'
-Bundle 'vim-scripts/AutoTag'
+Bundle 'plasticboy/vim-markdown'
 
 filetype on
 filetype plugin on
