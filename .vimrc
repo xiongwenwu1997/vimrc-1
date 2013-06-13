@@ -32,6 +32,7 @@ set cursorline
 set colorcolumn=80
 
 nnoremap <F4> :set hlsearch!<CR>
+nnoremap <leader><F4> :let @/ = ""<CR>
 
 nmap <leader>l :set list!<CR>
 set list
@@ -46,7 +47,7 @@ set number
 nmap <F3> :set invnumber<CR>
 
 " misc
-set pastetoggle=<F8>
+set pastetoggle=<F7>
 set wildignore+=*.so,*.swp,*.zip,*.pyc
 set clipboard=unnamedplus
 
@@ -102,8 +103,9 @@ colorscheme solarized
 
 
 " Taglist settings
-noremap <silent> <F7> :TlistToggle<cr>
+noremap <silent> <F8> :TlistToggle<cr>
 let g:Tlist_Show_One_File=1
+let g:Tlist_GainFocus_On_ToggleOpen=1
 let g:Tlist_Use_Right_Window=1
 let g:Tlist_Exit_OnlyWindow=1
 let g:Tlist_WinWidth=40
